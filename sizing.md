@@ -7,13 +7,13 @@ This document specifies all image sizing requirements for the Chronotype landing
 ## 1. HERO SECTION
 
 ### Hero Slider Images
-- **Container**: Aspect ratio `4/5` (mobile), `3.6/5` (desktop)
-- **Mobile**: Max width `320px` (constrained by `max-w-[240px]` at smallest)
+- **Container**: Aspect ratio `4/5` (mobile), `4.8/5` (desktop)
+- **Mobile**: Max width `240px` (constrained by `max-w-[240px]`)
 - **Desktop**: Width `52%` of the row (on the right side)
 - **Height**: Varies with width based on aspect ratio
 - **Object-fit**: `cover`
 - **Rounded corners**: `36px` (mobile), `44px` (sm+)
-- **Recommended size**: **1200x1500px** (maintains 4/5 aspect ratio)
+- **Recommended size**: **1200x1500px** (maintains 4:5 aspect ratio)
 - **File format**: JPG or WebP
 - **Quality**: High quality, well-lit, sleep/healthcare theme
 
@@ -42,9 +42,11 @@ This document specifies all image sizing requirements for the Chronotype landing
   - Row 1: 3 cards, each `col-span-4` (33.3% width minus gaps)
   - Row 2: 2 centered cards, each `max-w-[440px]`
 - **Card width**: ~350-440px depending on viewport
-- **Card height**: `min-h-[300px]` (mobile) / `min-h-[460px]` (desktop hero cards)
+- **Card height**: `min-h-[240px]` (mobile) / `min-h-[300px]` (desktop)
 - **Image area**: Not directly in cards; cards use icon + title + list
 - **Note**: Cards have gradient headers, not images
+- **Gradient header**: `bg-gradient-to-br` from accent color (light tint)
+- **Icon**: `h-11 w-11` or `h-12 w-12` in colored circle
 
 ---
 
@@ -59,11 +61,16 @@ This document specifies all image sizing requirements for the Chronotype landing
 - **Card height**: Auto (depends on content)
 
 ### Chronotype Images (per type)
-| Chronotype | Image Key | Recommended Size |
-|------------|-----------|------------------|
-| Lark | `larkHuman`, `larkHuman2` | 800x960px |
-| Eagle | `eagleHuman` | 800x960px |
-| Owl | `owlHuman`, `owlHuman2` | 800x960px |
+| Chronotype | Image Key | Recommended Size | Notes |
+|------------|-----------|------------------|-------|
+| Lark | `larkHuman`, `larkHuman2` | 800x960px | Morning chronotype |
+| Eagle | `eagleHuman` | 800x960px | Intermediate chronotype |
+| Owl | `owlHuman`, `owlHuman2` | 800x960px | Evening chronotype |
+
+### Card Content
+- **Badge**: Top-right, `h-8 w-8` icon in white circle
+- **Title**: `font-serif text-3xl` for name, `text-xs` for subtitle
+- **Points list**: 3-4 bullet points with `CheckCircle2` icons
 
 ---
 
@@ -76,18 +83,35 @@ This document specifies all image sizing requirements for the Chronotype landing
 - **Object-fit**: `cover`
 - **Recommended size**: **1200x800px** (matches URL params `h=1200&w=800`)
 
-### Card Images (3 Cards)
-- **Container**: `h-56 w-full` (336px height)
-- **Object-fit**: `cover`
+### Story Section Dimensions
+- **Main image container**: `h-96 w-full` (mobile), `sm:h-[24rem]` (larger)
+- **Secondary image**: Positioned in bottom-right corner overlay
 - **Rounded corners**: `36px`
-- **Recommended size**: **840x560px** (3:2 aspect ratio)
-- **Overlay**: Gradient overlay for text readability
+- **Recommended main image**: **1200x960px** (4:3 aspect)
+- **Recommended secondary image**: **400x500px** (portrait)
 
-| Card | Image Key | Title Overlay |
-|------|-----------|---------------|
-| Sleep | `sleepingWoman` | Peaceful restorative sleep |
-| Recovery | `stretchMorning` | Morning stretch recovery |
-| Energy | `bodyRepair` | Body repair during sleep |
+### Why Sleep Matters Cards
+- **Container**: `md:grid-cols-3` grid, `gap-8`
+- **Card dimensions**: 
+  - **Mobile**: Full width (`w-full`)
+  - **Tablet**: `w-full` (stacked in 2 columns on sm)
+  - **Desktop**: Equal width columns in 3-column grid
+- **Image header**: `h-56 w-full` (336px height)
+- **Object-fit**: `cover`
+- **Rounded corners**: `36px` (card), image fills
+- **Recommended size**: **840x560px** (3:2 aspect ratio)
+
+### Card Images (3 Cards)
+| Card | Image Key | Dimensions | Purpose |
+|------|-----------|------------|---------|
+| Sleep | `sleepingWoman` | 840x560px | Sleep restoration theme |
+| Recovery | `stretchMorning` | 840x560px | Morning recovery stretch |
+| Energy | `bodyRepair` | 840x560px | Physical energy restoration |
+
+### Card Overlay Elements
+- **Icon container**: `h-14 w-14` rounded-2xl, white background with colored icon
+- **Title**: `font-serif text-3xl` for name, `text-lg` for description
+- **Gradient overlay**: `from-black/55 via-black/10 to-transparent`
 
 ---
 
