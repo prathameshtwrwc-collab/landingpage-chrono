@@ -44,7 +44,7 @@ export default function Hero({ onConsult }: HeroProps) {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-[#FAF8F3] pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-36 lg:pb-28"
+      className="relative overflow-hidden bg-[#FAF8F3] pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-24 lg:pb-12"
     >
       {/* Ambient background layers */}
       <div className="pointer-events-none absolute inset-0">
@@ -55,7 +55,7 @@ export default function Hero({ onConsult }: HeroProps) {
 
       <div className="relative mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
         {/* Mobile: Image first, then text */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-10 xl:gap-14">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
           {/* IMAGE EDITORIAL COMPOSITION */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -68,7 +68,7 @@ export default function Hero({ onConsult }: HeroProps) {
               <div className="absolute -inset-3 -z-10 rounded-[44px] bg-gradient-to-br from-[#EEF6FF]/60 via-[#EAF3FB]/40 to-[#FFF4E8]/50 blur-sm sm:-inset-4 sm:rounded-[56px]" />
 
               {/* Main image viewport — soft editorial frame, no hard border */}
-              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[36px] shadow-[0_25px_70px_-20px_rgba(91,141,239,0.28)] sm:rounded-[44px] sm:shadow-[0_35px_90px_-25px_rgba(91,141,239,0.32)] lg:aspect-[3.8/5]">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[36px] shadow-[0_25px_70px_-20px_rgba(91,141,239,0.28)] sm:rounded-[44px] sm:shadow-[0_35px_90px_-25px_rgba(91,141,239,0.32)] lg:aspect-[4.8/5]">
                 <AnimatePresence custom={direction} mode="wait">
                   <motion.div
                     key={currentSlide}
@@ -186,7 +186,7 @@ export default function Hero({ onConsult }: HeroProps) {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="order-2 mt-10 w-full lg:order-1 lg:mt-0 lg:w-[48%] xl:w-[50%]"
           >
-            <h1 className="font-serif text-[2.8rem] font-bold leading-[1.06] tracking-tight text-[#17213A] sm:text-[3.4rem] lg:text-[3.2rem] xl:text-[3.7rem]">
+            <h1 className="font-serif text-[2.8rem] font-bold leading-[1.06] tracking-tight text-[#17213A] sm:text-[3.4rem] lg:text-[2rem] xl:text-[2.6rem] 2xl:text-[3.2rem]">
               Sleep is the foundation.
               <br />
               <span className="bg-gradient-to-r from-[#5B8DEF] to-[#34328E] bg-clip-text text-transparent">
@@ -195,17 +195,17 @@ export default function Hero({ onConsult }: HeroProps) {
               is the blueprint.
             </h1>
 
-            <p className="mt-5 max-w-lg text-xl font-semibold tracking-tight text-[#34328E] sm:mt-6 sm:text-[1.35rem]">
+            <p className="mt-5 max-w-lg text-xl font-semibold tracking-tight text-[#34328E] sm:mt-6 sm:text-[1.35rem] lg:mt-2 lg:text-[1rem]">
               Better Sleep. Better Energy. Better Life.
             </p>
 
-            <p className="mt-4 max-w-lg text-[17px] font-normal leading-[1.7] text-[#4A5568] sm:mt-5">
+            <p className="mt-4 max-w-lg text-[17px] font-normal leading-[1.7] text-[#4A5568] sm:mt-5 lg:mt-2">
               Sleep supports physical health, emotional wellbeing, mental performance, recovery and longevity.
               It is the quiet engine behind every good day — restoring the body, organizing the mind, and preparing
               you for whatever comes next.
             </p>
 
-            <div className="mt-6 max-w-lg space-y-2 border-l-[3px] border-[#F28C28] bg-[#FFF4E8]/40 py-2.5 pl-5 pr-4 rounded-r-2xl sm:mt-7 sm:pl-6">
+            <div className="mt-6 max-w-lg space-y-2 border-l-[3px] border-[#F28C28] bg-[#FFF4E8]/40 py-2.5 pl-5 pr-4 rounded-r-2xl sm:mt-7 sm:pl-6 lg:mt-2">
               <p className="font-serif text-lg font-medium italic text-[#17213A]">
                 Your days are only as powerful as your nights.
               </p>
@@ -214,7 +214,7 @@ export default function Hero({ onConsult }: HeroProps) {
               </p>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-10 sm:gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-10 sm:gap-4 lg:mt-4">
               <CTAButton
                 variant="primary"
                 icon={<ArrowRight size={18} />}
