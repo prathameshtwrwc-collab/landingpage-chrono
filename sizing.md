@@ -25,56 +25,7 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 2. THE RIPPLE EFFECT SECTION (Quality of Life)
-
-### Main Hero Image (Above Cards)
-- **Aspect ratio**: `16/9`
-- **Max width**: `512px` (within `max-w-5xl`)
-- **Height**: Calculated from `aspect-[16/9]`
-- **Rounded corners**: `40px`
-- **Recommended size**: **1152x648px** (16:9 aspect ratio)
-- **Object-fit**: `cover`
-- **Overlay**: Bottom gradient text overlay
-
-### Impact Cards (5 Cards)
-- **Mobile/Tablet**: `w-full` (stacked or 2-column)
-- **Desktop**: 
-  - Row 1: 3 cards, each `col-span-4` (33.3% width minus gaps)
-  - Row 2: 2 centered cards, each `max-w-[440px]`
-- **Card width**: ~350-440px depending on viewport
-- **Card height**: `min-h-[240px]` (mobile) / `min-h-[300px]` (desktop)
-- **Image area**: Not directly in cards; cards use icon + title + list
-- **Note**: Cards have gradient headers, not images
-- **Gradient header**: `bg-gradient-to-br` from accent color (light tint)
-- **Icon**: `h-11 w-11` or `h-12 w-12` in colored circle
-
----
-
-## 3. THREE PATTERNS, ONE RHYTHM SECTION (Chronotype Slider)
-
-### Chronotype Human Images
-- **Container**: `h-80 w-full` (mobile), `sm:h-88` (larger mobile)
-- **Object-fit**: `cover`
-- **Rounded corners**: `38px` (card), image fills container
-- **Recommended size**: **800x960px** (portrait orientation, ~4:5 aspect)
-- **Card width**: `w-[320px]` (mobile), `w-[360px]` (sm)
-- **Card height**: Auto (depends on content)
-
-### Chronotype Images (per type)
-| Chronotype | Image Key | Recommended Size | Notes |
-|------------|-----------|------------------|-------|
-| Lark | `larkHuman`, `larkHuman2` | 800x960px | Morning chronotype |
-| Eagle | `eagleHuman` | 800x960px | Intermediate chronotype |
-| Owl | `owlHuman`, `owlHuman2` | 800x960px | Evening chronotype |
-
-### Card Content
-- **Badge**: Top-right, `h-8 w-8` icon in white circle
-- **Title**: `font-serif text-3xl` for name, `text-xs` for subtitle
-- **Points list**: 3-4 bullet points with `CheckCircle2` icons
-
----
-
-## 4. WHY SLEEP MATTERS SECTION
+## 2. WHY SLEEP MATTERS SECTION
 
 ### Main Story Image
 - **Container**: Handled by `ImageStorySection` component
@@ -115,7 +66,91 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 5. PEAK PERFORMANCE SECTION (Biorhythm)
+## 3. SLEEP CYCLES SECTION
+
+### Cycle Visualization
+- **Container**: `h-96 w-full` (mobile), `sm:h-[24rem]` (larger)
+- **Object-fit**: `cover`
+- **Recommended size**: **1200x800px**
+- **Note**: Uses SVG/timeline graphics, not photo
+
+---
+
+## 4. SLEEP DISORDERS SECTION
+
+### Disorders Cards
+- **Container**: `md:grid-cols-2` grid, `gap-6`
+- **Card image**: `h-56 w-full` (336px height)
+- **Object-fit**: `cover`
+- **Recommended size**: **840x560px** (3:2 aspect ratio)
+
+| Card | Image Key | Dimensions |
+|------|-----------|------------|
+| Warning Signs | `tiredEyes` | 840x560px |
+| Symptoms | `tiredLaptop` | 840x560px |
+
+---
+
+## 5. WARNING SIGNS SECTION
+
+### Warning Image
+- **Container**: `h-96 w-full` (mobile), `sm:h-[28rem]` (larger)
+- **Object-fit**: `cover`
+- **Recommended size**: **1200x1600px** (portrait, 3:4 aspect)
+- **Image key**: `tiredEyes`
+
+---
+
+## 6. THE RIPPLE EFFECT SECTION (Quality of Life)
+
+### Main Hero Image (Above Cards)
+- **Aspect ratio**: `16/9`
+- **Max width**: `512px` (within `max-w-5xl`)
+- **Height**: Calculated from `aspect-[16/9]`
+- **Rounded corners**: `40px`
+- **Recommended size**: **1152x648px** (16:9 aspect ratio)
+- **Object-fit**: `cover`
+- **Overlay**: Bottom gradient text overlay
+
+### Impact Cards (5 Cards)
+- **Mobile/Tablet**: `w-full` (stacked or 2-column)
+- **Desktop**: 
+  - Row 1: 3 cards, each `col-span-4` (33.3% width minus gaps)
+  - Row 2: 2 centered cards, each `max-w-[440px]`
+- **Card width**: ~350-440px depending on viewport
+- **Card height**: `min-h-[240px]` (mobile) / `min-h-[300px]` (desktop)
+- **Image area**: Not directly in cards; cards use icon + title + list
+- **Note**: Cards have gradient headers, not images
+- **Gradient header**: `bg-gradient-to-br` from accent color (light tint)
+- **Icon**: `h-11 w-11` or `h-12 w-12` in colored circle
+
+---
+
+## 7. CHRONOTYPE TYPES SECTION (Three Patterns, One Rhythm)
+
+### Chronotype Human Images
+- **Container**: `h-80 w-full` (mobile), `sm:h-88` (larger mobile)
+- **Object-fit**: `cover`
+- **Rounded corners**: `38px` (card), image fills container
+- **Recommended size**: **800x960px** (portrait orientation, ~4:5 aspect)
+- **Card width**: `w-[320px]` (mobile), `w-[360px]` (sm)
+- **Card height**: Auto (depends on content)
+
+### Chronotype Images (per type)
+| Chronotype | Image Key | Recommended Size | Notes |
+|------------|-----------|------------------|-------|
+| Lark | `larkHuman`, `larkHuman2` | 800x960px | Morning chronotype |
+| Eagle | `eagleHuman` | 800x960px | Intermediate chronotype |
+| Owl | `owlHuman`, `owlHuman2` | 800x960px | Evening chronotype |
+
+### Card Content
+- **Badge**: Top-right, `h-8 w-8` icon in white circle
+- **Title**: `font-serif text-3xl` for name, `text-xs` for subtitle
+- **Points list**: 3-4 bullet points with `CheckCircle2` icons
+
+---
+
+## 8. BIORHYTHM SECTION (Peak Performance)
 
 ### Main Images
 - **Primary**: `yogaCliff`
@@ -135,7 +170,7 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 6. FOUR PILLARS SECTION
+## 9. FOUR PILLARS SECTION
 
 ### Pillar Images
 - **Large pillar** (Sleep): `h-full min-h-[420px]`
@@ -154,7 +189,7 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 7. SLEEP DISORDERS SECTION (Beyond Bedroom)
+## 10. BEYOND BEDROOM SECTION
 
 ### Main Image
 - **Container**: `h-[560px] w-full` (mobile), `sm:h-[620px]` (larger)
@@ -164,17 +199,7 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 8. WARNING SIGNS SECTION
-
-### Warning Image
-- **Container**: `h-80 w-full` (mobile), `sm:h-96` (larger)
-- **Object-fit**: `cover`
-- **Recommended size**: **800x1280px** (portrait)
-- **Image key**: `tiredEyes`
-
----
-
-## 9. SLEEP FACTS SECTION
+## 11. SLEEP FACTS SECTION
 
 ### Fact Cards
 - **Container**: Each card has `h-80 w-full` image area
@@ -184,7 +209,7 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ---
 
-## 10. GALLERY SHOWCASE (Guidance)
+## 12. GUIDANCE SECTION
 
 ### Doctor Consult Images
 - **Container**: `h-full w-full` (fills card)
@@ -196,20 +221,22 @@ This document specifies all image sizing requirements for the Chronotype landing
 
 ## SUMMARY TABLE
 
-| Section | Image Key | Dimensions | Aspect Ratio | Purpose |
-|---------|-----------|------------|--------------|---------|
-| Hero (all slides) | heroSlides[i] | 1200x1500 | 4:5 | Main carousel |
-| Ripple Hero | `tiredDesk` | 1152x648 | 16:9 | Section banner |
-| Chronotype (x6) | `larkHuman`, `owlHuman`, etc. | 800x960 | 4:5 | Type cards |
-| Why Sleep (primary) | `sleepingWoman` | 1200x800 | 3:2 | Story image |
-| Why Sleep (cards x3) | `sleepingWoman`, `stretchMorning`, etc. | 840x560 | 3:2 | Card headers |
-| Biorhythm (main) | `yogaCliff`, `neckStretch` | 1200x800 | 3:2 | Story image |
-| Four Pillars (large) | `cozyBed` | 840x560 | 3:2 | Large card |
-| Four Pillars (small x3) | `runningRoad`, `nutritionPlate`, `windowLight` | 600x400 | 3:2 | Small cards |
-| Beyond Bedroom | `friendsHug` | 1200x896 | ~4:3 | Section image |
-| Warning Signs | `tiredEyes` | 800x1280 | 4:5 | Warning image |
-| Sleep Facts (x3) | `focusBrain`, `bodyRepair`, `dailyPerformance` | 800x1280 | 4:5 | Fact cards |
-| Guidance (x2) | `doctorConsult`, `doctorConsult2` | 800x1000 | 4:5 | Gallery images |
+| # | Section | Image Key | Dimensions | Aspect Ratio | Purpose |
+|---|---------|-----------|------------|--------------|---------|
+| 1 | Hero (all slides) | heroSlides[i] | 1200x1500 | 4:5 | Main carousel |
+| 2 | Why Sleep (primary) | `sleepingWoman` | 1200x800 | 3:2 | Story image |
+| 3 | Why Sleep (cards x3) | `sleepingWoman`, `stretchMorning`, etc. | 840x560 | 3:2 | Card headers |
+| 4 | Sleep Cycles | - | SVG | - | Timeline graphic |
+| 5 | Sleep Disorders (x2) | `tiredEyes`, `tiredLaptop` | 840x560 | 3:2 | Disorder cards |
+| 6 | Warning Signs | `tiredEyes` | 1200x1600 | 3:4 | Warning image |
+| 7 | Ripple Hero | `tiredDesk` | 1152x648 | 16:9 | Section banner |
+| 8 | Chronotype (x6) | `larkHuman`, `owlHuman`, etc. | 800x960 | 4:5 | Type cards |
+| 9 | Biorhythm (main) | `yogaCliff`, `neckStretch` | 1200x800 | 3:2 | Story image |
+| 10 | Four Pillars (large) | `cozyBed` | 840x560 | 3:2 | Large card |
+| 11 | Four Pillars (small x3) | `runningRoad`, `nutritionPlate`, `windowLight` | 600x400 | 3:2 | Small cards |
+| 12 | Beyond Bedroom | `friendsHug` | 1200x896 | ~4:3 | Section image |
+| 13 | Sleep Facts (x3) | `focusBrain`, `bodyRepair`, `dailyPerformance` | 800x1280 | 4:5 | Fact cards |
+| 14 | Guidance (x2) | `doctorConsult`, `doctorConsult2` | 800x1000 | 4:5 | Gallery images |
 
 ---
 
