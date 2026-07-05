@@ -9,7 +9,7 @@ export default function SleepDisorders() {
       <SectionHeader
         eyebrow="Know the Signs"
         title="Common Sleep Disorders"
-        description="Sleep disorders come in many forms — some obvious, some silent. Recognizing them early is the first step toward restoring restful, restorative sleep."
+        description="Sleep disorders can affect sleep quality, daytime functioning, productivity, emotional well-being, and long-term health."
       />
       <DisorderSlider />
       <AnimatedReveal className="mt-14 text-center">

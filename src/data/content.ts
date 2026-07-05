@@ -87,10 +87,11 @@ export const whySleepCards = [
     title: "For the Brain",
     image: stockImages.focusBrain,
     items: [
-      "Consolidates memories and learning",
-      "Supports emotional regulation",
-      "Clears metabolic waste from the brain",
-      "Enhances focus, creativity and decision-making",
+      "Supports learning and memory",
+      "Improves focus and concentration",
+      "Helps process emotions",
+      "Enhances decision-making abilities",
+      "Promotes creativity and problem-solving",
     ],
   },
   {
@@ -98,27 +99,29 @@ export const whySleepCards = [
     image: stockImages.bodyRepair,
     items: [
       "Repairs tissues and muscles",
-      "Strengthens the immune system",
-      "Regulates hormones and metabolism",
-      "Supports cardiovascular health",
+      "Strengthens immunity",
+      "Supports hormonal balance",
+      "Regulates metabolism",
+      "Promotes growth and recovery",
     ],
   },
   {
     title: "For Daily Performance",
     image: stockImages.dailyPerformance,
     items: [
-      "Improves reaction time and coordination",
-      "Boosts productivity and efficiency",
-      "Sustains energy throughout the day",
-      "Reduces the risk of errors and accidents",
+      "Improves energy levels",
+      "Enhances productivity",
+      "Supports emotional resilience",
+      "Improves reaction times",
+      "Reduces the risk of accidents and errors",
     ],
   },
 ];
 
 export const nremStages = [
-  { stage: "Stage 1", desc: "Light sleep, the transition from wakefulness to sleep." },
-  { stage: "Stage 2", desc: "Deeper relaxation, heart rate and body temperature drop." },
-  { stage: "Stage 3", desc: "Deep restorative sleep, tissue growth and repair occur." },
+  { stage: "Stage 1", desc: "Light transition between wakefulness and sleep." },
+  { stage: "Stage 2", desc: "Heart rate slows, body temperature decreases, and memory processing begins." },
+  { stage: "Stage 3", desc: "Deep restorative sleep where physical repair, immune strengthening, and recovery occur." },
 ];
 
 export const disorders = [
@@ -178,23 +181,23 @@ export const warningSigns = [
 export const qualityOfLifeCards = [
   {
     title: "Cognitive Impact",
-    items: ["Reduced concentration and memory", "Slower decision-making", "Increased errors and accidents"],
+    items: ["Poor concentration", "Reduced attention span", "Memory lapses", "Slower reaction times", "Reduced decision-making ability"],
   },
   {
     title: "Emotional Impact",
-    items: ["Higher irritability and mood swings", "Increased risk of anxiety and depression", "Reduced emotional resilience"],
+    items: ["Irritability", "Mood fluctuations", "Increased stress", "Anxiety symptoms", "Reduced emotional resilience"],
   },
   {
     title: "Physical Impact",
-    items: ["Weakened immune function", "Increased risk of chronic disease", "Weight gain and metabolic imbalance"],
+    items: ["Weight gain", "Reduced immunity", "Elevated blood pressure", "Glucose dysregulation", "Increased risk of metabolic disorders"],
   },
   {
     title: "Work & Academic Impact",
-    items: ["Reduced productivity and efficiency", "Poor performance under pressure", "Difficulty learning new information"],
+    items: ["Reduced productivity", "Difficulty completing tasks", "Increased errors", "Absenteeism", "Reduced performance"],
   },
   {
     title: "Social Impact",
-    items: ["Strained relationships", "Reduced patience with others", "Social withdrawal and isolation"],
+    items: ["Poor communication", "Relationship difficulties", "Reduced empathy", "Social withdrawal", "Isolation"],
   },
 ];
 
@@ -205,10 +208,10 @@ export const chronotypes = [
     image: stockImages.larkHuman,
     photo: stockImages.larkSunrise,
     points: [
-      "Naturally wake early and feel energized in the morning",
-      "Peak alertness and productivity in the early hours",
-      "Tend to feel sleepy earlier in the evening",
-      "Perform best with early-scheduled demanding tasks",
+      "Naturally wake early",
+      "Peak performance occurs in the morning",
+      "Prefer earlier bedtimes",
+      "Energy gradually declines during the evening",
     ],
   },
   {
@@ -217,10 +220,10 @@ export const chronotypes = [
     image: stockImages.eagleHuman,
     photo: stockImages.eagleOffice,
     points: [
-      "Flexible sleep-wake patterns, adaptable to schedules",
-      "Steady energy levels throughout the day",
-      "Represent the majority of the population",
-      "Can adjust more easily to changing routines",
+      "Balanced energy throughout the day",
+      "Adapt well to conventional schedules",
+      "Consistent productivity patterns",
+      "Flexible sleep-wake timing",
     ],
   },
   {
@@ -229,10 +232,10 @@ export const chronotypes = [
     image: stockImages.owlHuman2,
     photo: stockImages.owlNight,
     points: [
-      "Naturally stay alert later into the night",
-      "Peak performance in the afternoon and evening",
-      "Struggle with early mornings and early demands",
-      "Perform best with later-scheduled focused work",
+      "Prefer later bedtimes",
+      "Peak energy occurs later in the day",
+      "Often struggle with early mornings",
+      "Tend to be most productive in the evening",
     ],
   },
 ];
@@ -284,42 +287,46 @@ export const beyondBedroomBenefits = [
 
 export const sleepFacts = [
   {
-    title: "Humans spend a third of their lives asleep",
-    desc: "Roughly one-third of a person's lifetime is spent sleeping — an investment far too important to overlook.",
+    title: "Your body clock influences when you naturally feel alert, productive, and sleepy. Not everyone is designed to function on the same schedule.",
+    desc: "",
   },
   {
-    title: "The brain stays remarkably active during sleep",
-    desc: "Far from shutting down, the brain processes memories, emotions and information while the body rests.",
+    title: "A typical night's sleep consists of 4–6 sleep cycles, each lasting approximately 90–120 minutes.",
+    desc: "",
   },
   {
-    title: "Sleep needs change throughout life",
-    desc: "Infants, teenagers, adults and older adults all have different sleep requirements as the body evolves.",
+    title: "Sleep plays a critical role in memory, learning, emotional regulation, immunity, recovery, and long-term health.",
+    desc: "",
   },
   {
-    title: "Chronic sleep loss has cumulative effects",
-    desc: "Missing sleep builds a 'sleep debt' over time that can quietly affect health, mood and performance.",
+    title: "Small improvements in sleep habits can lead to meaningful improvements in energy, mood, and performance.",
+    desc: "",
   },
 ];
 
 export const faqs = [
   {
-    q: "How many hours of sleep do I actually need?",
-    a: "Most adults need between 7 and 9 hours of quality sleep per night, though individual needs can vary based on age, lifestyle and overall health.",
+    q: "What is a chronotype?",
+    a: "A chronotype is your natural preference for sleeping, waking, and performing activities throughout the day.",
   },
   {
-    q: "Can I train myself to need less sleep?",
-    a: "No. The body's biological need for sleep cannot be trained away. Consistently sleeping less than needed leads to a cumulative sleep debt that impacts health and performance over time.",
+    q: "What are the main chronotypes?",
+    a: "The most commonly recognized chronotypes are Larks (morning types), Eagles (intermediate types), and Owls (evening types).",
   },
   {
-    q: "What is a chronotype and can it change?",
-    a: "A chronotype is your natural predisposition toward a particular sleep-wake pattern. It is influenced by genetics and tends to shift gradually with age, but its core tendency generally remains stable.",
+    q: "How many hours of sleep do adults need?",
+    a: "Most adults require approximately 7–9 hours of sleep per night.",
   },
   {
-    q: "Is it bad to sleep in on weekends to catch up?",
-    a: "Occasional catch-up sleep can help ease short-term sleep debt, but it does not fully reverse the effects of chronic sleep deprivation and can disrupt your regular rhythm if overdone.",
+    q: "What is REM sleep?",
+    a: "REM (Rapid Eye Movement) sleep is a sleep stage associated with dreaming, emotional processing, learning, and memory consolidation.",
   },
   {
-    q: "When should I see a sleep specialist?",
-    a: "If sleep difficulties persist for several weeks, affect your daily functioning, or are accompanied by symptoms like loud snoring, gasping for air, or excessive daytime sleepiness, it is worth consulting a professional.",
+    q: "What is the difference between REM and NREM sleep?",
+    a: "NREM sleep primarily supports physical restoration, while REM sleep primarily supports mental and emotional processing.",
+  },
+  {
+    q: "When should I seek help for a sleep problem?",
+    a: "If sleep difficulties persist, affect daily functioning, or involve symptoms such as loud snoring, breathing pauses, or excessive daytime sleepiness, professional evaluation is recommended.",
   },
 ];

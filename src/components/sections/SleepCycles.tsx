@@ -11,7 +11,8 @@ export default function SleepCycles() {
       <SectionHeader
         eyebrow="The Science of Sleep"
         title="Understanding Sleep Cycles"
-        description="Each night, your body moves through repeating cycles of NREM and REM sleep — each with a distinct, essential role in restoring the body and mind."
+        description="Healthy sleep consists of repeating cycles that occur throughout the night.
+Each cycle lasts approximately 90 to 120 minutes and includes different stages of sleep, each serving a unique purpose."
       />
 
       <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
@@ -61,8 +62,7 @@ export default function SleepCycles() {
               </span>
               <h3 className="font-serif text-2xl text-[#17213A]">Learning, Memory and Emotional Processing</h3>
               <p className="mt-3 text-sm leading-relaxed text-[#667085]">
-                During REM sleep, the brain actively consolidates memories, processes emotions, and supports learning —
-                preparing you mentally for the day ahead.
+                REM sleep accounts for approximately 20 to 25 percent of total sleep. During REM sleep: Most dreaming occurs , Emotional experiences are processed , Learning is consolidated ,Creativity is enhanced , The brain remains highly active while the body remains relaxed
               </p>
             </div>
           </AnimatedReveal>

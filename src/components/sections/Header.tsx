@@ -6,6 +6,7 @@ import CTAButton from "../ui/CTAButton";
 const links = [
   { label: "Sleep Science", href: "#sleep-cycles" },
   { label: "Chronotypes", href: "#chronotypes" },
+  { label: "About Us", href: "#about-us" },
   { label: "Energy Pillars", href: "#pillars" },
   { label: "FAQ", href: "#faq" },
 ];

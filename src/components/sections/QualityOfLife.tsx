@@ -23,7 +23,7 @@ export default function QualityOfLife() {
       <SectionHeader
         eyebrow="The Ripple Effect"
         title="How Poor Sleep Affects Quality of Life"
-        description="The effects of poor sleep rarely stay contained to the night. They ripple outward — touching how you think, feel, work and connect with others."
+        description="Sleep affects far more than just how rested you feel. Poor sleep affects every conversation, every decision, every relationship, and every opportunity."
       />
 
       <div className="relative">

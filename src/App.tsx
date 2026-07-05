@@ -9,6 +9,7 @@ import WarningSigns from "./components/sections/WarningSigns";
 import QualityOfLife from "./components/sections/QualityOfLife";
 import ChronotypeIntro from "./components/sections/ChronotypeIntro";
 import ChronotypeTypes from "./components/sections/ChronotypeTypes";
+import AboutUs from "./components/sections/AboutUs";
 import Biorhythm from "./components/sections/Biorhythm";
 import FourPillars from "./components/sections/FourPillars";
 import BeyondBedroom from "./components/sections/BeyondBedroom";
@@ -34,6 +35,7 @@ export default function App() {
         <QualityOfLife />
         <ChronotypeIntro onConsult={() => setConsultOpen(true)} />
         <ChronotypeTypes />
+        <AboutUs onConsult={() => setConsultOpen(true)} />
         <Biorhythm />
         <FourPillars />
         <BeyondBedroom />

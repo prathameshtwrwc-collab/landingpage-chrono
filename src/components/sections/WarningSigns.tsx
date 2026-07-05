@@ -37,9 +37,8 @@ export default function WarningSigns({ onConsult }: WarningSignsProps) {
               Warning Signs That Should Not Be Ignored
             </h2>
             <p className="mt-4 max-w-xl text-[#667085]">
-              If you notice several of these signs regularly, it may be time to take a closer look at your sleep
-              health.
-            </p>
+                Sleep problems may begin at night, but their consequences are often felt throughout the day.
+              </p>
           </AnimatedReveal>
           <div className="mt-8">
             <WarningPanel />

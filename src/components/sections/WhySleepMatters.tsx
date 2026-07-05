@@ -20,9 +20,8 @@ export default function WhySleepMatters() {
         title="Good sleep does not just change your nights."
       >
         <p className="text-[17px] font-normal leading-relaxed text-[#4A5568]">
-          Sleep is one of the most powerful, natural tools for health and performance. It supports physical health,
-          emotional wellbeing, mental performance, recovery and longevity — quietly working behind every part of
-          daily life.
+          Sleep is a natural state of rest that allows the body and mind to repair, recover, and prepare for the demands of the next day.
+          Far from being a passive process, sleep is an active biological function that supports virtually every system of the body.
         </p>
         <p className="font-serif text-2xl font-bold italic text-[#17213A]">It changes your life.</p>
         <div className="pt-2">

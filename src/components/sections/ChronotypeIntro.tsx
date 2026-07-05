@@ -27,9 +27,8 @@ export default function ChronotypeIntro({ onConsult }: ChronotypeIntroProps) {
           </AnimatedReveal>
           <AnimatedReveal delay={0.16}>
             <p className="mt-5 max-w-lg leading-relaxed text-[#667085]">
-              A chronotype is your body's natural inclination toward a particular sleep-wake pattern, shaped largely
-              by genetics and internal biological rhythms. It influences when you naturally feel alert, when you feel
-              sleepy, and when you perform at your best.
+              Although sleep is essential for everyone, not everyone is biologically programmed to sleep and function on the same schedule.
+              Your chronotype reflects your natural preference for sleeping, waking, and performing activities throughout the day.
             </p>
             <div className="mt-6 space-y-3 border-l-2 border-[#F28C28]/40 pl-5">
               <p className="font-serif text-lg italic text-[#17213A]">

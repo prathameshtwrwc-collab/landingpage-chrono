@@ -7,7 +7,7 @@ export default function ChronotypeSlider() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
 
   const scrollTo = useCallback((index: number) => {
     if (!scrollRef.current) return;

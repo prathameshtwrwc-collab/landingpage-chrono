@@ -18,9 +18,8 @@ export default function Biorhythm() {
         title="Use Your Unique Biorhythm to Optimize Performance"
       >
         <p className="text-[17px] font-normal leading-relaxed text-[#4A5568]">
-          Once you understand your chronotype, you can begin structuring your day to work with your natural rhythm
-          rather than against it — scheduling demanding tasks, exercise, meals and rest at the times your body is
-          naturally primed for them.
+          We all have the same 24 hours.
+          The difference lies in how effectively we align our activities with our natural biological rhythms.
         </p>
         <p className="font-serif text-2xl font-bold italic text-[#17213A]">
           Peak performance is not about doing more. It is about doing the right things at the right time.
